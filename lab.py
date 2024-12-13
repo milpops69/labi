@@ -49,18 +49,17 @@ def lab5_function():
         def __init__(self, name):
             self.name = name
         def bark(self):
-            return f"{self.name} говорит: Гав-гав!"
+            return f"{self.name} говорит: Кукареку!"
 
     class Cat(Dog):
         def meow(self):
-            return f"{self.name} говорит: Мяу!"
+            return f"{self.name} говорит: Кчау!"
 
-    dog = Dog("Барбос")
-    cat = Cat("Пушок")
+    dog = Dog("Джесси")
+    cat = Cat("Гном")
 
     output_text.delete(1.0, tk.END)
     output_text.insert(tk.END, dog.bark() + "\n")
-    output_text.insert(tk.END, cat.bark() + "\n")
     output_text.insert(tk.END, cat.meow() + "\n")
 
 root = tk.Tk()
